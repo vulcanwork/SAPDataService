@@ -1,5 +1,0 @@
-﻿<?xml version = '1.0' encoding = 'utf-8' ?>
-<!-- Created with Liquid Studio 2020 (https://www.liquid-technologies.com) -->
-<element name="root" xmlns="http://relaxng.org/ns/structure/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://relaxng.org/ns/structure/1.0 http://relaxng.org/relaxng.xsd">
-    <empty/>
-</element>
