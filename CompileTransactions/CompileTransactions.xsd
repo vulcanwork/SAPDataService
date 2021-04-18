@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created with Liquid Studio 2020 (https://www.liquid-technologies.com)-->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="winService">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice maxOccurs="unbounded">
+                    <xs:element ref="winService" minOccurs="0" maxOccurs="unbounded" />
+                    <xs:element name="compileAll" minOccurs="0">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="transaction" minOccurs="0" maxOccurs="unbounded">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="dataTable" minOccurs="0">
+                                                <xs:complexType mixed="true">
+                                                    <xs:sequence>
+                                                        <xs:element name="strartTime" type="xs:dateTime" minOccurs="0" />
+                                                        <xs:element name="insert" type="xs:int" minOccurs="0" />
+                                                        <xs:element name="update" type="xs:int" minOccurs="0" />
+                                                        <xs:element name="noTransaction" type="xs:int" minOccurs="0" />
+                                                        <xs:element name="endTime" type="xs:dateTime" minOccurs="0" />
+                                                    </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:element name="compileTime" type="xs:time" minOccurs="0" />
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

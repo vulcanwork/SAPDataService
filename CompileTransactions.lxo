@@ -1,0 +1,15 @@
+# Liquid Technologies - XML Objects project file
+# Can be loaded into the wizard or used as a command file for the Cmd Line tool
+
+/Language:CS
+/GenerateVSProject:VS2019
+/OutputFolder:.\CompileTransactions
+/EmbeddedXsdValidator
+/GenerateSample
+/VSProjectAssemblyName:LiquidXmlObjects.CompileTransactions
+/GenerationModel:Simple
+/DefaultOptionalAttributes
+/UnprocessedHandlers
+/CollectionNaming:Pluralize
+/OutputNamespace:LiquidXmlObjects.CompileTransactions
+.\CompileTransactions.xsd

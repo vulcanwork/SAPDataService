@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Studio 2020 (https://www.liquid-technologies.com) -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="winService">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="service" type="xs:string" />
+          <xs:element minOccurs="0" name="compileAll">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" name="transaction">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element minOccurs="0" name="dataTable">
+                        <xs:complexType mixed="true">
+                          <xs:sequence>
+                            <xs:element minOccurs="0" name="strartTime" type="xs:string" />
+                            <xs:element minOccurs="0" name="insert" type="xs:string" />
+                            <xs:element minOccurs="0" name="update" type="xs:string" />
+                            <xs:element minOccurs="0" name="noTransaction" type="xs:string" />
+                            <xs:element minOccurs="0" name="endTime" type="xs:string" />
+                          </xs:sequence>
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element minOccurs="0" name="compileTime" type="xs:string" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
