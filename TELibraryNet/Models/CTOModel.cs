@@ -1,6 +1,6 @@
 ﻿
 
-namespace TELibraryNet.Models
+namespace ParseLibraryNet.Models
 {
     public class CTOModel
     {

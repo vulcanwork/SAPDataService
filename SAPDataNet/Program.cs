@@ -4,8 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading;
-using TELibraryNet.DataTransactions;
-using TELibraryNet.Models;
+using ParseLibraryNet.DataTransactions;
+using ParseLibraryNet.Models;
 using System.Diagnostics;
 
 namespace SAPDataNetCore

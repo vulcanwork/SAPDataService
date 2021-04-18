@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TELibraryNet.DataTransactions
+namespace ParseLibraryNet.DataTransactions
 {
     public class txtWriter
     {      

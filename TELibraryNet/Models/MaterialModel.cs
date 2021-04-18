@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TELibraryNet.DataTransactions;
-namespace TELibraryNet.Models
+using ParseLibraryNet.DataTransactions;
+namespace ParseLibraryNet.Models
 {
     public class MaterialModel
     {

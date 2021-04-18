@@ -5,15 +5,15 @@ using System.Text;
 using Microsoft.Data.SqlClient;
 using System.Threading.Tasks;
 using Dapper;
-using TELibraryNet.Models;
+using ParseLibraryNet.Models;
 
 using System.Data;
 
-namespace TELibraryNet.DataTransactions
+namespace ParseLibraryNet.DataTransactions
 {
     public class sqlTransactions
     {
-        private static string sapConnect = "Data Source=uss14ap106;Initial Catalog=SAPdata;Persist Security Info=True;User ID=SAP;Password=Password1";
+        private static string sapConnect = "Data Source=xxx";
         public static void InsertCTO(CTOModel ctoModel)
         {
 
@@ -342,7 +342,6 @@ namespace TELibraryNet.DataTransactions
             p.Add("@id", headerModel.ID);
             p.Add("@LastChangeDate", dbType: DbType.Date, direction: ParameterDirection.Output);
             DateTime d;
-            int i = 0;
             using (IDbConnection connection = new SqlConnection(sapConnect))
             {
                 try
@@ -376,7 +375,7 @@ namespace TELibraryNet.DataTransactions
                     var retrun = connection.Query(procedure, p, commandType: CommandType.StoredProcedure);
                     i = p.Get<int>("@id");
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     throw;
                 }

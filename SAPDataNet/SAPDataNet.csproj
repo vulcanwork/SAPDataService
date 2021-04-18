@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Worker">
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -17,6 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TELibraryNet\TELibraryNet.csproj" />
+    <ProjectReference Include="..\TELibraryNet\ParseLibraryNet.csproj" />
   </ItemGroup>
 </Project>

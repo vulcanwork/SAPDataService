@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SAPDataNet", "SAPDataNet\SAPDataNet.csproj", "{EA38C6B8-89EF-4653-9598-E2C6E934E16E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TELibraryNet", "TELibraryNet\TELibraryNet.csproj", "{38BB4610-E056-41AA-9B0F-325D4284C8B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParseLibraryNet", "TELibraryNet\ParseLibraryNet.csproj", "{38BB4610-E056-41AA-9B0F-325D4284C8B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace TELibraryNet.DataTransactions
+namespace ParseLibraryNet.DataTransactions
 {
     public class xmlLog
     {
