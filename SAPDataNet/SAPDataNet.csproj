@@ -17,6 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TELibraryNet\ParseLibraryNet.csproj" />
+    <ProjectReference Include="..\ParseLibraryNet\ParseLibraryNet.csproj" />
   </ItemGroup>
 </Project>
